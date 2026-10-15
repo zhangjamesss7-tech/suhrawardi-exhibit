@@ -42,21 +42,38 @@ sup.fn{font-size:.7em;line-height:0}sup.fn a{padding:0 2px}
 :target{scroll-margin-top:18px}:focus-visible{outline:2px solid #24567d;outline-offset:3px}
 @media(max-width:550px){h1{font-size:29px}.wrap{padding:0 18px}.readout{grid-template-columns:1fr}.plaque{grid-template-columns:75px 1fr;font-size:14px}}
 @media print{body{background:white}.roomnav{display:none}section{break-before:page}.sources li,.placard{break-inside:avoid}a{color:inherit}.back{display:none}}
+
+/* A modest illustrated exhibition: colour and diagrams, without animations. */
+body{background:#eee6d5;color:#282a33}
+.wrap{max-width:980px;padding:0 34px}
+section{padding:54px 0;border:0;background:#fbf7ec!important}
+h1,h2,h3{color:#303047!important}h1{font-family:Georgia,serif;font-size:48px;max-width:650px}h1 em{color:#b67a18;font-style:italic}h2{font-family:Georgia,serif;font-size:30px!important}
+.stack{gap:18px!important}.label,.n{color:#7d561c!important;text-transform:uppercase!important;letter-spacing:1px!important;font-size:12px}
+.entrance{border-top:12px solid #343148;background:#f5efdf!important}
+.ask{border-left:4px solid #c29438;padding:12px 18px;background:#eadcb7}
+.plaque{background:#fffaf0;padding:22px;border:1px solid #d8caa9}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;border:0;padding:0;margin:14px 0}
+.timeline>div{border-top:4px solid #b28b42;background:#eae1ce;padding:16px;margin:0;font-size:14px}.timeline b{color:#61431b;margin-bottom:8px}.timeline .hot{border-color:#854b49;background:#efddcf}
+.panel{background:#e8dfce;border:0;border-left:4px solid #a77930}
+.reasons{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.reasons>div{border-top:2px solid #aa8e5f;padding-top:18px;margin:0;font-size:15px}
+#room-one{background:#e5e4ef!important;border-top:8px solid #56536f}
+.grid2{grid-template-columns:1.25fr 1fr;align-items:center}.vs,.versus{grid-template-columns:1fr 1fr}
+.vs>div{background:#f7f5fc!important;border:0;border-top:4px solid #7a769c}
+.barrier{border:0;background:#302e45;padding:22px;max-width:none}.barrier .illus{color:#e6d9af!important}
+.static-diagram{height:190px;gap:0}.ray{flex:1.3;clip-path:polygon(0 40%,100% 5%,100% 95%,0 60%);background:linear-gradient(90deg,#ffe098,#bea369);height:150px;display:flex;align-items:center;justify-content:center;color:#30281a;font-weight:bold;padding:0}.block{flex:1;background:#666276;color:white;border-left:6px solid #d9c69b;padding:26px 8px;font-size:14px}
+#room-two{background:#f5e6bf!important;border-top:8px solid #b78b33}.tiers{gap:14px;max-width:760px;margin:auto;width:100%}.tier{border:0!important;border-left:6px solid #a27525!important;padding:22px!important}.t1{background:#fff9df!important;margin:0 0}.t2{background:#edd18c!important;margin:0 24px}.t3{background:#dbb463!important;margin:0 48px}.bodies{background:#dfdce6!important;border:1px dashed #787185;margin-top:12px}
+.bright-note{background:#fff7e3;border:0;border-left:4px solid #af8534}.readout{grid-template-columns:1fr 1fr}.more .grid2{display:block}.placard{background:#fff5d8;border-color:#c6a867}.placard:nth-child(n+3){background:#e2dce9;border-color:#9c91aa}.more{border-color:#bd9c59}
+#room-three{background:#e8edf0!important;border-top:8px solid #5b7983}.versus>div{border:0;border-top:5px solid #b78b33;background:#fff5d9!important}.versus>.hume{background:#d7e3e9!important;border-color:#5b7983}.ask-box{background:#d4e1e5;border:0;border-left:4px solid #5b7983}
+#ontario{background:#e9eddf!important;border-top:8px solid #758161}.mine{background:#f7f7ed;border-color:#a7b28b}
+#endnotes{background:#faf8f0!important;border-top:4px solid #b4aa93}.sources{font-size:14px}footer{max-width:980px}footer a{margin-left:18px}
+@media(max-width:700px){.wrap{padding:0 22px}h1{font-size:37px}.timeline{grid-template-columns:1fr 1fr}.reasons,.grid2,.vs,.versus{grid-template-columns:1fr}.tier.t2{margin:0 12px}.tier.t3{margin:0 24px}.readout{grid-template-columns:1fr}section{padding:36px 0}}
+@media print{section{background:white!important}.timeline,.reasons{display:block}.barrier{print-color-adjust:exact}h1{font-size:32px}}
+
 </style>
 </head>
 <body>
 
-<nav class="roomnav" aria-label="Exhibit rooms">
-  <ul>
-    <li><a href="#entrance">Entrance</a></li>
-    <li><a href="#room-one">Room 1 · Bodies</a></li>
-    <li><a href="#room-two">Room 2 · Light</a></li>
-    <li><a href="#room-three">Room 3 · Self</a></li>
-    <li><a href="#ontario">Ontario</a></li>
-    <li><a href="#endnotes">Endnotes</a></li>
-    <li><a href="Suhrawardi-exhibit-backup.pdf" download>PDF backup</a></li>
-  </ul>
-</nav>
+
 
 <main>
 <!-- ENTRANCE -->
@@ -286,7 +303,7 @@ sup.fn{font-size:.7em;line-height:0}sup.fn a{padding:0 2px}
   </div>
 </section>
 </main>
-<footer><div class="wrap">Curated by James Zhang · HZB3M Metaphysics &amp; Identity Summative</div></footer>
+<footer><div class="wrap">Curated by James Zhang · HZB3M Metaphysics &amp; Identity Summative</div> <a href="Suhrawardi-exhibit-backup.pdf" download>Download PDF backup</a></footer>
 
 </body>
 </html>
